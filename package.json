@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "node-profile": "node ./src/index.js",
-    "build": "babel src -d dist"
+    "build": "webpack",
+    "test": "mocha ./test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4"
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2"
   }
 }
